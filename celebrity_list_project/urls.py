@@ -20,5 +20,6 @@ from celebrities import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.celebrity_list, name='celebrity_list'), 
+    path('', views.celebrity_list, name='celebrity_list'),
+    path('create/', views.create_celebrity, name='create_star'), 
 ]
