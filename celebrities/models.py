@@ -7,3 +7,4 @@ class Celebrity(models.Model):
 
     def __str__(self):
         return self.full_name
+    photo = models.ImageField(upload_to='celebrities/', null=True, blank=True)
