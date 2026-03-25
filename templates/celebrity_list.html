@@ -1,0 +1,10 @@
+<h1>Список знаменитостей</h1>
+<hr>
+{% for celeb in stars %}
+    <div>
+        <h3>{{ celeb.full_name }}</h3>
+        <p><b>Профессия:</b> {{ celeb.occupation }}</p>
+        <p>{{ celeb.bio }}</p>
+    </div>
+    <hr>
+{% endfor %}
